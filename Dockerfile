@@ -3,6 +3,7 @@ FROM openjdk:8-jre
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
  rsync \
  curl \
+ procps \
  && rm -rf /var/lib/apt/lists/*
 
 RUN curl -O https://rrdp.ripe.net/certification/content/static/validator/rpki-validator-app-2.23-dist.tar.gz
