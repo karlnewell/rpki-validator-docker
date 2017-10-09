@@ -1,5 +1,3 @@
-MAINTAINER Karl Newell <karlnewell@gmail.com>
-
 FROM openjdk:8-jre
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
